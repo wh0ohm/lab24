@@ -1,8 +1,17 @@
 #include<iostream>
+#include<set>
 
 using namespace std;
 
 //Write function count() here.
+int count(int data[], int n){
+	set<int> dataSet;
+	for(int i=0;i<n;i++){
+		dataSet.insert(data[i]);
+	}
+	return dataSet.size();
+}
+
 
 int main(){	
 	int data[] = {1,2,4,5,4,8,2,1,2,4,6,1,4,4,4,2,1,0,12}; 
